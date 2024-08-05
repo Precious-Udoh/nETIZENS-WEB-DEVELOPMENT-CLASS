@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+section{
+   display: grid; 
+   gap: 5px;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   grid-template-rows: repeat(4, 1fr);
+   width: 600px;
+}
+
+section div{
+    height: 100px;
+    background-color: red;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+section div:nth-child(1){
+    background-color: cyan;
+    height: unset;
+    grid-row: 1/4;
+}
+section div:nth-child(2){
+    background-color: red;
+    height: unset;
+    grid-column: 2/4;
+}
+section div:nth-child(3){
+    background-color: purple;
+    height: unset;
+    grid-column: 4/6;
+}
+section div:nth-child(4){
+    background-color: skyblue;
+}
+section div:nth-child(5){
+    background-color: navy;
+    grid-column: 2/4;
+    height: unset;
+}
+section div:nth-child(6){
+    background-color: green;
+    grid-column: 3/5;
+    grid-row: 2/3;
+}
+section div:nth-child(7){
+    background-color: rgba(36, 29, 102, 0.767);
+    height: unset;
+    grid-column: 5/6;
+    grid-row: 2/4;
+}
+section div:nth-child(8){
+    background-color: darkslategrey;
+}
+section div:nth-child(9){
+    background-color: orange;
+    height: unset;
+    grid-column: 1/6;
+}
+
+    </style>
+
+</head>
+<body>
+    <section>
+        <div>three</div>
+        <div>six</div>
+        <div>seven</div>
+        <div>nine</div>
+        <div>five</div>
+        <div>two</div>
+        <div>eight</div>
+        <div>four</div>
+        <div>one</div>
+    </section>
+</body>
+</html>
